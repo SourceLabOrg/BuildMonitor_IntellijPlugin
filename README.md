@@ -52,7 +52,7 @@ Using your Buildkite account, create a new API access token with the following p
 3. Paste your API Access Token into to the <kbd>Api Access Token</kbd> field.
 4. Click the <kbd>Test Connection</kbd> button to verify everything works.
 
-Skip to instructions below labeled `Setup Build Monitor`
+Skip to instructions below labeled `Setup Build Monitor Profile`
 
 ## Adding Github Account
 
@@ -72,21 +72,40 @@ Using your Github account, create a new `Personal Access Token` (classic) with t
 3. Paste your Personal Access Token into to the <kbd>Api Access Token</kbd> field.
 4. Click the <kbd>Test Connection</kbd> button to verify everything works.
 
-Skip to instructions below labeled `Setup Build Monitor`
+Skip to instructions below labeled `Setup Build Monitor Profile`
 
-## Setup Build Monitor
+## Setup Build Monitor Profile
+
+Build Monitor Profiles allow you to define which builds/workflows you want to show up in the ToolWindow.  You can define
+multiple profiles, each with varying filter criteria.  Additionally, you can alter which pieces of information are displayed inline
+along side the build.
+
+<kbd>Settings/Preferences</kbd> > <kbd>Tools</kbd> > <kbd>Build Monitor Accounts</kbd> > <kbd>Monitor Profiles</kbd>
+1. Click the <kbd>+</kbd> icon and give your new profile a name.
+2. Select which Account you want to use.
+3. Define the filter criteria to determine which builds will be displayed.
+4. `Display Options` allows you to select which pieces of information will be included with the build.
+5. `Notification Options` allows you select which types of notifications you would like to receive for the builds. 
+
+![](images/MonitorProfile-Buildkite.png)
 
 ## Launch Monitor
 
+From the `Tools` drop down menu select `Build Monitor` to open the ToolWindow.
+
+Select a `Build Monitor Profile` to open the display.  
+
+![](images/ToolWindow-Select.png)
+
+###### Buildkite Builds![](images/Monitor-Buildkite-2.png)
+
+###### Github Workflows![](images/Monitor-Github.png)
+
+## Bug Reports and Feature Requests
 
 Submit BugReports or Feature Requests: [https://github.com/SourceLabOrg/BuildMonitor_IntellijPlugin/issues](https://github.com/SourceLabOrg/BuildMonitor_IntellijPlugin/issues)
 
-
 <!-- Plugin description end -->
-
----
-
-## Screen Shots
 
 ---
 
